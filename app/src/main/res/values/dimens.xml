@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_padding_bottom">16dp</dimen>
+    <dimen name="activity_padding_top">16dp</dimen>
+    <dimen name="activity_padding_left">16dp</dimen>
+    <dimen name="activity_padding_right">16dp</dimen>
+
+    <dimen name="normal_margin">16dp</dimen>
+    <dimen name="margin_left">42dp</dimen>
+    <dimen name="triple_margin">48dp</dimen>
+    <dimen name="margin_top">60dp</dimen>
+    <dimen name="margin_bottom">16dp</dimen>
+    <dimen name="margin_bottom_radiob">2dp</dimen>
+    <dimen name="solution2_size">16sp</dimen>
+    <dimen name="solution_size">18sp</dimen>
+    <dimen name="title_size">28dp</dimen>
+    <dimen name="subhead_size">20sp</dimen>
+    <dimen name="namehint_size">30sp</dimen>
+    <dimen name="question_text_size">20sp</dimen>
+    <dimen name="result_size">25sp</dimen>
+    <dimen name="score_text_size2">70sp</dimen>
+    <dimen name="score_text_size1">90sp</dimen>
+
+</resources>

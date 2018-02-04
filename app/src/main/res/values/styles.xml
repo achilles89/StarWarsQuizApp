@@ -1,0 +1,345 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">serif</item>
+    </style>
+
+    <style name="RelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/startscreenbackgroundstars</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:paddingBottom">@dimen/activity_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/activity_padding_top</item>
+    </style>
+
+    <style name="LinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">@dimen/normal_margin</item>
+        <item name="android:layout_below">@id/questionImage</item>
+    </style>
+
+    <style name="LinearLayout_land">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_below">@id/questionImage</item>
+    </style>
+
+    <style name="ScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/startscreenbackgroundstars</item>
+    </style>
+
+    <style name="StarWarsLogo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
+        <item name="android:layout_below">@id/starwarslogo_imageview</item>
+    </style>
+
+    <style name="NameEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:background">#000000</item>
+        <item name="android:layout_below">@id/title_textview</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/namehint_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="Subhead">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/subhead_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_below">@id/name_edittext</item>
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+    </style>
+
+    <style name="QuestionText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/question_text_size</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:paddingLeft">@dimen/activity_padding_left</item>
+        <item name="android:paddingRight">@dimen/activity_padding_right</item>
+    </style>
+
+    <style name="QuestionText_land">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/question_text_size</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:paddingLeft">@dimen/activity_padding_left</item>
+        <item name="android:paddingRight">@dimen/activity_padding_right</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
+    </style>
+
+    <style name="QuestionImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:src">@drawable/question1</item>
+        <item name="android:layout_below">@id/question</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
+    </style>
+
+    <style name="QuestionImage_land">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/question1</item>
+        <item name="android:layout_below">@id/question</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textSize">@dimen/question_text_size</item>
+        <item name="android:layout_marginLeft">@dimen/margin_left</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_radiob</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="AppTheme">
+        <item name="colorControlNormal">@color/textcolor</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+        <item name="android:buttonTint">#E0E0E0</item>
+    </style>
+
+    <style name="RadioGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_below">@id/questionImage</item>
+        <item name="android:layout_margin">@dimen/normal_margin</item>
+    </style>
+
+    <style name="Solution">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginLeft">@dimen/normal_margin</item>
+        <item name="android:layout_marginRight">@dimen/normal_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/solution_size</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/txtAnswer</item>
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+    </style>
+
+    <style name="Solution2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/triple_margin</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginLeft">@dimen/normal_margin</item>
+        <item name="android:layout_marginRight">@dimen/normal_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/solution2_size</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="Solution_land">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/normal_margin</item>
+        <item name="android:layout_marginRight">@dimen/normal_margin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/solution_size</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/txtAnswer</item>
+        <item name="android:layout_margin">@dimen/normal_margin</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="button_land">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@id/solution</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">text</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textSize">@dimen/question_text_size</item>
+        <item name="android:layout_below">@id/questionImage</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingLeft">@dimen/activity_padding_left</item>
+        <item name="android:paddingRight">@dimen/activity_padding_right</item>
+    </style>
+
+    <style name="CheckBox" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:buttonTint">#E0E0E0</item>
+    </style>
+
+    <style name="LinearLayout_score">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_below">@id/result</item>
+    </style>
+
+    <style name="Score_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/result_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
+    </style>
+
+    <style name="Scores">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ScoreImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:src">@drawable/scorepadawan</item>
+        <item name="android:layout_below">@id/linear</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
+    </style>
+
+    <style name="ScoreImage_land">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/scorepadawan</item>
+        <item name="android:layout_below">@id/linear</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom</item>
+    </style>
+
+    <style name="Result_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/subhead_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_below">@id/ScoreImage</item>
+        <item name="android:paddingLeft">@dimen/activity_padding_left</item>
+        <item name="android:paddingRight">@dimen/activity_padding_right</item>
+    </style>
+
+    <style name="Result_text_land">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/subhead_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_below">@id/ScoreImage</item>
+        <item name="android:layout_margin">@dimen/normal_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_padding_left</item>
+        <item name="android:paddingRight">@dimen/activity_padding_right</item>
+    </style>
+
+    <style name="Restart_Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/normal_margin</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:padding">@dimen/normal_margin</item>
+    </style>
+
+    <style name="Restart_Button_land">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/normal_margin</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:padding">@dimen/normal_margin</item>
+        <item name="android:layout_below">@id/result_text</item>
+    </style>
+
+</resources>

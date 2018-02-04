@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RelativeLayout"
+    android:paddingLeft="@dimen/activity_padding_left"
+    android:paddingRight="@dimen/activity_padding_right"
+    tools:context="com.example.android.starwarsquizapp.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/starwarslogo_imageview"
+        style="@style/StarWarsLogo"
+        android:src="@drawable/starwarslogo" />
+
+    <TextView
+        android:id="@+id/title_textview"
+        style="@style/Title"
+        android:text="@string/title" />
+
+    <EditText
+        android:id="@+id/name_edittext"
+        style="@style/NameEditText"
+        android:hint="@string/namefield" />
+
+    <TextView
+        style="@style/Subhead"
+        android:text="@string/subhead" />
+
+    <Button
+        android:id="@+id/beginButton"
+        style="@style/button"
+        android:text="@string/begin_button" />
+
+</RelativeLayout>
+
+
+
+
+

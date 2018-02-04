@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Star Wars Quiz App</string>
+
+
+    <string name="title">movie quiz</string>
+    <string name="subhead">Let the Force flow through you as you answer questions related to the Episode I. - VI.</string>
+    <string name="namefield">Name</string>
+    <string name="begin_button">begin</string>
+    <string name="submit">Submit</string>
+    <string name="restart">restart</string>
+    <string name="you_got">Your score is </string>
+    <string name="out_of">out of 7. Press Start to restart the quiz.</string>
+    <string name="out_of2">/7</string>
+    <string name="q3_hint">Type your answer here.</string>
+    <string name="check">SUBMIT</string>
+    <string name="next">NEXT</string>
+    <string name="no_selection">Please select an answer!</string>
+    <string name="result_padawan">"Much to learn, you still have!"</string>
+    <string name="result_jedi">"Keep your concentration here and now, where it belongs!"</string>
+    <string name="result_master">"You are strong and wise and I am very proud of you!"</string>
+
+    <string name="question1">Question 1</string>
+    <string name="good_answer1">Keira Knightley</string>
+    <string name="first_q">10/1 \nWho played Sabé, the counterpart of Queen Amidala?</string>
+    <string name="q1_hint">Write your answer here</string>
+
+    <string name="question2">Question 2</string>
+    <string name="second_q">10/2 \nWho killed Jango Fett?</string>
+    <string name="q_2_a">Obi-Wan Kenobi</string>
+    <string name="q_2_b">Ki-Adi Mundi</string>
+    <string name="q_2_c">Mace Windu</string>
+    <string name="q_2_d">Anakin Skywalker</string>
+
+    <string name="question3">Question 3</string>
+    <string name="third_q">10/3\nWhat is Order 66?</string>
+    <string name="q_3_a">Galactic warrant of arrest for the Millenium Falcon</string>
+    <string name="q_3_b">Decree of the rise to power of Darth Sidious</string>
+    <string name="q_3_c">It called on the clone army to kill the Jedi</string>
+    <string name="q_3_d">It was the name of Han Solo\'s emergency plan</string>
+
+    <string name="question4">Question 4</string>
+    <string name="fourth_q">10/4 \nHow may arms General Grievous has?</string>
+    <string name="q_4_a">Four</string>
+    <string name="q_4_b">Three</string>
+    <string name="q_4_c">Two</string>
+    <string name="q_4_d">One</string>
+
+    <string name="question5">Question 5</string>
+    <string name="fifth_q">10/5 \nWho inherits the charge of Admiral Ozzel after he had been strangled by Darth Vader?</string>
+    <string name="q_5_a">Moff Jerjerrod</string>
+    <string name="q_5_b">Captain Needa</string>
+    <string name="q_5_c">General Veers</string>
+    <string name="q_5_d">Captain Piett</string>
+
+    <string name="question6">Question 6</string>
+    <string name="sixth_q">10/6 \nHow does Han Solo try to keep Luke who is frozen to the narrow?</string>
+    <string name="q_6_a">Make a fire</string>
+    <string name="q_6_b">Put him inside a dead tauntaun</string>
+    <string name="q_6_c">Brings him in a wigwam</string>
+    <string name="q_6_d">With Chewbacca\'s exuviated and collected fur</string>
+
+    <string name="question7">Question 7</string>
+    <string name="good_answer2">Dooku</string>
+    <string name="seventh_q">10/7 \nWho was the master of Qui-Gon Jinn? (one word)</string>
+
+    <string name="question8">Question 8</string>
+    <string name="eighth_q">10/8 \nWith wich vehicle managed the Rebels to bundle the legs of an AT-AT Walker? </string>
+    <string name="q_8_a">X-Wing Starfighter</string>
+    <string name="q_8_b">T-47 Airspeeder</string>
+    <string name="q_8_c">Y-Wing Starfighter</string>
+    <string name="q_8_d">Mon Calamari Star Cruiser</string>
+
+    <string name="question9">Question 9</string>
+    <string name="ninth_q">10/9 \nWhich hand of Luke\'s was cut off by Darth Vader in Cloud City? </string>
+    <string name="q_9_a">Right</string>
+    <string name="q_9_b">Left</string>
+    <string name="q_9_c">None of them</string>
+    <string name="q_9_d">Both</string>
+
+    <string name="question10">Question 10</string>
+    <string name="tenth_q">10/10 \nWhat color is Luke Skywalker\'s lightsaber like? </string>
+    <string name="q_10_a">Blue</string>
+    <string name="q_10_b">Purple</string>
+    <string name="q_10_c">Green</string>
+    <string name="q_10_d">Red</string>
+
+    <string name="correct">Nice job, padawan!</string>
+    <string name="wrong_solution">Wrong! The correct answer is:  </string>
+    <string name="wrong_solutions">Wrong! The correct answers are:  </string>
+
+    <string name="end">Restart</string>
+    <string name="your_score">Your Score:</string>
+    <string name="score3">0</string>
+    <string name="score4">/</string>
+
+</resources>

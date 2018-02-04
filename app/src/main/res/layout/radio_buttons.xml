@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RelativeLayout"
+    android:paddingBottom="@dimen/activity_padding_bottom"
+    android:paddingTop="@dimen/activity_padding_top"
+    tools:context="com.example.android.starwarsquizapp.MainActivity">
+
+    <TextView
+        android:id="@+id/question"
+        style="@style/QuestionText"
+        android:text="@string/second_q" />
+
+    <ImageView
+        android:id="@+id/questionImage"
+        style="@style/QuestionImage" />
+
+    <RadioGroup
+        android:id="@+id/answers_2"
+        style="@style/RadioGroup">
+
+        <RadioButton
+            android:id="@+id/answer_2_a"
+            style="@style/RadioButton"
+            android:text="@string/q_2_a"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/answer_2_b"
+            style="@style/RadioButton"
+            android:text="@string/q_2_b"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/answer_2_c"
+            style="@style/RadioButton"
+            android:text="@string/q_2_c"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/answer_2_d"
+            style="@style/RadioButton"
+            android:text="@string/q_2_d"
+            android:theme="@style/RadioButtonStyle" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/solution"
+        style="@style/Solution2"
+        android:layout_below="@id/answers_2" />
+
+    <Button
+        android:id="@+id/submit_button"
+        style="@style/button"
+        android:onClick="submitButton"
+        android:text="@string/submit"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/next"
+        style="@style/button"
+        android:onClick="next"
+        android:text="@string/next"
+        android:visibility="invisible" />
+
+</RelativeLayout>

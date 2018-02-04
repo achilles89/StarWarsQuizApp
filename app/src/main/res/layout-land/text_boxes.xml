@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout style="@style/RelativeLayout">
+
+        <TextView
+            android:id="@+id/question"
+            style="@style/QuestionText_land"
+            android:text="@string/first_q" />
+
+        <ImageView
+            android:id="@+id/questionImage"
+            style="@style/QuestionImage_land" />
+
+        <EditText
+            android:id="@+id/txtAnswer"
+            style="@style/EditText"
+            android:backgroundTint="#0c53e2"
+            android:hint="@string/q1_hint" />
+
+        <TextView
+            android:id="@+id/solution"
+            style="@style/Solution_land" />
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/button"
+            android:onClick="submitButton"
+            android:text="@string/submit"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/next"
+            style="@style/button_land"
+            android:onClick="next"
+            android:text="@string/next"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</ScrollView>
