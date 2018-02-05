@@ -28,7 +28,7 @@ public class ScorePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.scores_at_the_end);
         Bundle extras = getIntent().getExtras();
-        //display score
+        //Display the scores
         scoreView = findViewById(R.id.right);
         total = extras.getInt("total");
         scoreView.setText(String.valueOf(total));
@@ -57,7 +57,7 @@ public class ScorePage extends AppCompatActivity {
 
 
     }
-
+    //This happens when clicking on Restart button. Back to the first activity.
     public void restartButton(View view) {
         finish();
         Intent intent = new Intent(ScorePage.this, MainActivity.class);

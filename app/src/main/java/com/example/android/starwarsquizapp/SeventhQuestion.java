@@ -14,7 +14,7 @@ import android.widget.TextView;
  */
 
 public class SeventhQuestion extends AppCompatActivity {
-    //global variables
+    //These are the global variables
     ImageView questionImage;
     TextView question, solution;
     EditText editTxtAnswer;
@@ -26,12 +26,12 @@ public class SeventhQuestion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.text_boxes);
-//sent score as intent
+        //Sent score as intent
         Bundle extras = getIntent().getExtras();
         total = extras.getInt("total");
         QuestionNumber = extras.getInt("QuestionNumber");
 
-        //which seventh question global variables
+        //Wiring the xlm elements to the variables
         questionImage = findViewById(R.id.questionImage);
         question = findViewById(R.id.question);
         solution = findViewById(R.id.solution);
@@ -42,7 +42,7 @@ public class SeventhQuestion extends AppCompatActivity {
         question.setText(R.string.seventh_q);
     }
 
-    //submitButton click
+    ///This happens when clicking on submitButton
     public void submitButton(View view) {
         String answer = editTxtAnswer.getText().toString().toLowerCase().trim();
         //if answer is correct
@@ -55,13 +55,13 @@ public class SeventhQuestion extends AppCompatActivity {
         else {
             solution.setText(getString(R.string.wrong_solution) + " " + (getString(R.string.good_answer2)));
         }
-        //change button
+        //change button from Submit to Next
         checkButton.setVisibility(View.INVISIBLE);
         next.setVisibility(View.VISIBLE);
 
     }
 
-    //checkButton click
+    ////This happens when clicking on Next button; starting the next activity.
     public void next(View view) {
         QuestionNumber += 1;
         Intent nextQuestion = (new Intent(SeventhQuestion.this, EighthQuestion.class));

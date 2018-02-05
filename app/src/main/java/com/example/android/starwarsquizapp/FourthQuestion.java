@@ -16,7 +16,7 @@ import android.widget.Toast;
  */
 
 public class FourthQuestion extends AppCompatActivity {
-    //global variables
+    //These are the global variables
     ImageView questionImage;
     TextView question;
     CheckBox choice1, choice2, choice3, choice4;
@@ -29,12 +29,12 @@ public class FourthQuestion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.check_boxes);
-//sent score as intent
+        //Sent score as intent
         Bundle extras = getIntent().getExtras();
         total = extras.getInt("total");
         QuestionNumber = extras.getInt("QuestionNumber");
 
-//which fourth  question global variables
+        //Wiring the xlm elements to the variables
         questionImage = findViewById(R.id.questionImage);
         question = findViewById(R.id.question);
         choice1 = findViewById(R.id.choice_1);
@@ -48,7 +48,7 @@ public class FourthQuestion extends AppCompatActivity {
 
     }
 
-    //submitButton click
+    //This happens when clicking on submitButton
     public void submitButton(View view) {
         //if there is an answer
         if (choice1.isChecked() || choice2.isChecked() || choice3.isChecked() || choice4.isChecked()) {
@@ -66,7 +66,7 @@ public class FourthQuestion extends AppCompatActivity {
                 choice4.setTextColor(ContextCompat.getColor(FourthQuestion.this, R.color.colorRed));
                 solution.setText(getString(R.string.wrong_solutions) + " " + (getString(R.string.q_4_a)) + ", " + (getString(R.string.q_4_c)));
             }
-            //change button
+            //change button from Submit to Next
             submitButton.setVisibility(View.INVISIBLE);
             next.setVisibility(View.VISIBLE);
         } else {
@@ -79,7 +79,7 @@ public class FourthQuestion extends AppCompatActivity {
 
     }
 
-    //checkButton click
+    ////This happens when clicking on Next button; starting the next activity.
     public void next(View view) {
 
         QuestionNumber += 1;
